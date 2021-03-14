@@ -1,0 +1,6 @@
+module Pods_SPM {
+  umbrella header "Pods-SPM-umbrella.h"
+
+  export *
+  module * { export * }
+}
