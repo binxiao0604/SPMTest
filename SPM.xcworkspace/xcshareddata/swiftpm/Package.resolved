@@ -9,6 +9,15 @@
           "revision": "254617dd7fae0c45319ba5fbea435bf4d0e15b5d",
           "version": "5.1.2"
         }
+      },
+      {
+        "package": "SwiftPackageByXcode",
+        "repositoryURL": "https://github.com/binxiao0604/SwiftPackageByXcode.git",
+        "state": {
+          "branch": null,
+          "revision": "44e08edc371a1318bbb8a4a0bad03bc54ddfad01",
+          "version": "1.0.0"
+        }
       }
     ]
   },

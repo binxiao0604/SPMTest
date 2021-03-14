@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09F30128FF7FC0D459F59C39 /* libPods-SPM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AAB7F47C4FCE7741A81719 /* libPods-SPM.a */; };
-		131D6F9825FEA853007A25A4 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 131D6F9725FEA853007A25A4 /* SwiftPackageProductDependency */; };
+		131D6F9825FEA853007A25A4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 131D6F9725FEA853007A25A4 /* RxSwift */; };
+		131D6FA425FEC2AA007A25A4 /* SwiftPackageByXcode in Frameworks */ = {isa = PBXBuildFile; productRef = 131D6FA325FEC2AA007A25A4 /* SwiftPackageByXcode */; };
 		1364261825FE98BA005AF95B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364261725FE98BA005AF95B /* AppDelegate.swift */; };
 		1364261A25FE98BA005AF95B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364261925FE98BA005AF95B /* SceneDelegate.swift */; };
 		1364261C25FE98BA005AF95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364261B25FE98BA005AF95B /* ViewController.swift */; };
@@ -36,7 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				131D6F9825FEA853007A25A4 /* BuildFile in Frameworks */,
+				131D6F9825FEA853007A25A4 /* RxSwift in Frameworks */,
+				131D6FA425FEC2AA007A25A4 /* SwiftPackageByXcode in Frameworks */,
 				09F30128FF7FC0D459F59C39 /* libPods-SPM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +84,6 @@
 				C65263CBEB6A3602ABE342A8 /* Pods-SPM.debug.xcconfig */,
 				BC73AAA31036BCAB2B3EED94 /* Pods-SPM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,7 +113,8 @@
 			);
 			name = SPM;
 			packageProductDependencies = (
-				131D6F9725FEA853007A25A4 /* SwiftPackageProductDependency */,
+				131D6F9725FEA853007A25A4 /* RxSwift */,
+				131D6FA325FEC2AA007A25A4 /* SwiftPackageByXcode */,
 			);
 			productName = SPM;
 			productReference = 1364261425FE98BA005AF95B /* SPM.app */;
@@ -142,7 +144,8 @@
 			);
 			mainGroup = 1364260B25FE98BA005AF95B;
 			packageReferences = (
-				131D6F9625FEA853007A25A4 /* RemoteSwiftPackageReference */,
+				131D6F9625FEA853007A25A4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				131D6FA225FEC2AA007A25A4 /* XCRemoteSwiftPackageReference "SwiftPackageByXcode" */,
 			);
 			productRefGroup = 1364261525FE98BA005AF95B /* Products */;
 			projectDirPath = "";
@@ -402,7 +405,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		131D6F9625FEA853007A25A4 /* RemoteSwiftPackageReference */ = {
+		131D6F9625FEA853007A25A4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -410,13 +413,26 @@
 				minimumVersion = 5.1.2;
 			};
 		};
+		131D6FA225FEC2AA007A25A4 /* XCRemoteSwiftPackageReference "SwiftPackageByXcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/binxiao0604/SwiftPackageByXcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		131D6F9725FEA853007A25A4 /* SwiftPackageProductDependency */ = {
+		131D6F9725FEA853007A25A4 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 131D6F9625FEA853007A25A4 /* RemoteSwiftPackageReference */;
+			package = 131D6F9625FEA853007A25A4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		131D6FA325FEC2AA007A25A4 /* SwiftPackageByXcode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 131D6FA225FEC2AA007A25A4 /* XCRemoteSwiftPackageReference "SwiftPackageByXcode" */;
+			productName = SwiftPackageByXcode;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

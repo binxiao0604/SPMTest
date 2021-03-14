@@ -8,14 +8,13 @@
 import UIKit
 import RxSwift
 import HandyJSON
+import SwiftPackageByXcode
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        SwiftPackageByXcode().test()
     }
-
-
 }
 
