@@ -2,21 +2,39 @@
   "object": {
     "pins": [
       {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "package": "AFNetworking",
+        "repositoryURL": "https://gitee.com/guaizaizaiguai/AFNetworking",
         "state": {
           "branch": null,
-          "revision": "254617dd7fae0c45319ba5fbea435bf4d0e15b5d",
-          "version": "5.1.2"
+          "revision": "ffae2391ab0c29dc88eb0a58d2f5b2c2c27cadbf",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://gitee.com/mirrors/RxSwift",
+        "state": {
+          "branch": null,
+          "revision": "7e01c05f25c025143073eaa3be3532f9375c614b",
+          "version": "6.1.0"
+        }
+      },
+      {
+        "package": "SPMLibraryForOC",
+        "repositoryURL": "https://gitee.com/guaizaizaiguai/SPMLibraryForOC.git",
+        "state": {
+          "branch": "master",
+          "revision": "d96ac816a5ddf4732d29f8ffadf2d3e52a99b1b2",
+          "version": null
         }
       },
       {
         "package": "SwiftPackageByXcode",
-        "repositoryURL": "https://github.com/binxiao0604/SwiftPackageByXcode.git",
+        "repositoryURL": "https://gitee.com/guaizaizaiguai/SwiftPackageByXcode.git",
         "state": {
-          "branch": null,
-          "revision": "44e08edc371a1318bbb8a4a0bad03bc54ddfad01",
-          "version": "1.0.0"
+          "branch": "master",
+          "revision": "80993a21fd03b0334e0e5a25fe29d04d45d7e472",
+          "version": null
         }
       }
     ]
