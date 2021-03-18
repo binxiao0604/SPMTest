@@ -14,11 +14,11 @@
 		1364261F25FE98BA005AF95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1364261D25FE98BA005AF95B /* Main.storyboard */; };
 		1364262125FE98BF005AF95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1364262025FE98BF005AF95B /* Assets.xcassets */; };
 		1364262425FE98BF005AF95B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1364262225FE98BF005AF95B /* LaunchScreen.storyboard */; };
-		BF2C4AED2600B89C004E11A8 /* library in Frameworks */ = {isa = PBXBuildFile; productRef = BF2C4AEC2600B89C004E11A8 /* library */; };
 		BFC5EF75260091A70070FC57 /* SwiftPackageByXcode in Frameworks */ = {isa = PBXBuildFile; productRef = BFC5EF74260091A70070FC57 /* SwiftPackageByXcode */; };
 		BFC5EF78260092FD0070FC57 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BFC5EF77260092FD0070FC57 /* RxSwift */; };
 		BFC5EF7B260096A90070FC57 /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = BFC5EF7A260096A90070FC57 /* AFNetworking */; };
 		BFC5EF8B26009A160070FC57 /* SPMLibraryForOC in Frameworks */ = {isa = PBXBuildFile; productRef = BFC5EF8A26009A160070FC57 /* SPMLibraryForOC */; };
+		BFED17FB26031EC000EC9A7C /* HopotPackage in Frameworks */ = {isa = PBXBuildFile; productRef = BFED17FA26031EC000EC9A7C /* HopotPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +45,6 @@
 		1364262525FE98BF005AF95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC73AAA31036BCAB2B3EED94 /* Pods-SPM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPM.release.xcconfig"; path = "Target Support Files/Pods-SPM/Pods-SPM.release.xcconfig"; sourceTree = "<group>"; };
 		BF20592C25FF728500E2945C /* SPM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPM-Bridging-Header.h"; sourceTree = "<group>"; };
-		BF2C4AEB2600B886004E11A8 /* library */ = {isa = PBXFileReference; lastKnownFileType = folder; name = library; path = ../SwiftPackage/library; sourceTree = "<group>"; };
 		C65263CBEB6A3602ABE342A8 /* Pods-SPM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPM.debug.xcconfig"; path = "Target Support Files/Pods-SPM/Pods-SPM.debug.xcconfig"; sourceTree = "<group>"; };
 		D7AAB7F47C4FCE7741A81719 /* libPods-SPM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -55,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2C4AED2600B89C004E11A8 /* library in Frameworks */,
+				BFED17FB26031EC000EC9A7C /* HopotPackage in Frameworks */,
 				BFC5EF78260092FD0070FC57 /* RxSwift in Frameworks */,
 				BFC5EF75260091A70070FC57 /* SwiftPackageByXcode in Frameworks */,
 				09F30128FF7FC0D459F59C39 /* libPods-SPM.a in Frameworks */,
@@ -70,7 +69,6 @@
 		1364260B25FE98BA005AF95B = {
 			isa = PBXGroup;
 			children = (
-				BF2C4AEB2600B886004E11A8 /* library */,
 				1364261625FE98BA005AF95B /* SPM */,
 				1364261525FE98BA005AF95B /* Products */,
 				BC9275337704C783CC709530 /* Pods */,
@@ -141,7 +139,7 @@
 				BFC5EF77260092FD0070FC57 /* RxSwift */,
 				BFC5EF7A260096A90070FC57 /* AFNetworking */,
 				BFC5EF8A26009A160070FC57 /* SPMLibraryForOC */,
-				BF2C4AEC2600B89C004E11A8 /* library */,
+				BFED17FA26031EC000EC9A7C /* HopotPackage */,
 			);
 			productName = SPM;
 			productReference = 1364261425FE98BA005AF95B /* SPM.app */;
@@ -176,6 +174,7 @@
 				BFC5EF76260092FD0070FC57 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				BFC5EF79260096A90070FC57 /* XCRemoteSwiftPackageReference "AFNetworking" */,
 				BFC5EF8926009A160070FC57 /* XCRemoteSwiftPackageReference "SPMLibraryForOC" */,
+				BFED17F926031EC000EC9A7C /* XCRemoteSwiftPackageReference "HotpotPackage" */,
 			);
 			productRefGroup = 1364261525FE98BA005AF95B /* Products */;
 			projectDirPath = "";
@@ -486,13 +485,17 @@
 				kind = branch;
 			};
 		};
+		BFED17F926031EC000EC9A7C /* XCRemoteSwiftPackageReference "HotpotPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/guaizaizaiguai/HotpotPackage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BF2C4AEC2600B89C004E11A8 /* library */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = library;
-		};
 		BFC5EF74260091A70070FC57 /* SwiftPackageByXcode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BFC5EF73260091A70070FC57 /* XCRemoteSwiftPackageReference "SwiftPackageByXcode" */;
@@ -512,6 +515,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BFC5EF8926009A160070FC57 /* XCRemoteSwiftPackageReference "SPMLibraryForOC" */;
 			productName = SPMLibraryForOC;
+		};
+		BFED17FA26031EC000EC9A7C /* HopotPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFED17F926031EC000EC9A7C /* XCRemoteSwiftPackageReference "HotpotPackage" */;
+			productName = HopotPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

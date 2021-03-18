@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import HandyJSON
 import SwiftPackageByXcode
+import HopotPackage
 
 class ViewController: UIViewController {
 
@@ -30,6 +31,8 @@ class ViewController: UIViewController {
         testC()
         SPMTestOC().testOC()
         SPMTestMixed().testCplus()
+        
+        HotpotPackage().test()
     }
 }
 

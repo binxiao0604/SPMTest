@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "HopotPackage",
+        "repositoryURL": "https://gitee.com/guaizaizaiguai/HotpotPackage.git",
+        "state": {
+          "branch": "master",
+          "revision": "627e1d0f841a1d06b2a1de716e2190861202db60",
+          "version": null
+        }
+      },
+      {
         "package": "RxSwift",
         "repositoryURL": "https://gitee.com/mirrors/RxSwift",
         "state": {
